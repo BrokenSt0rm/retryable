@@ -1,0 +1,18 @@
+[package]
+name = "retryable-proc_macros"
+version = "0.1.1"
+authors = ["Andrea Campana <info@andreacampana.me>"]
+edition = "2018"
+license = "MIT"
+description = "Automatic function retry macro"
+readme = "README.md"
+repository = "https://github.com/BrokenSt0rm/retryable"
+
+[lib]
+proc-macro = true
+path = "mod.rs"
+
+[dependencies]
+syn = "1.0.77"
+quote = "1.0.9"
+darling = "0.13.0"
